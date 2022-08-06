@@ -1,0 +1,6 @@
+[
+    {"firstName":"userFirstName01","lastName":"userLastName01","gender":"M","email":"userEmail01.com","phoneNumber":"08787878787","username":"username01","password":"password01","role":"A","onlineStatus":false},
+    {"firstName":"userFirstName02","lastName":"userLastName02","gender":"M","email":"userEmail02.com","phoneNumber":"08787878787","username":"username02","password":"password02","role":"A","onlineStatus":false},
+    {"firstName":"userFirstName03","lastName":"userLastName03","gender":"M","email":"userEmail03.com","phoneNumber":"08787878787","username":"username03","password":"password03","role":"A","onlineStatus":false},
+    {"firstName":"userFirstName04","lastName":"userLastName04","gender":"M","email":"userEmail04.com","phoneNumber":"08787878787","username":"username04","password":"password04","role":"A","onlineStatus":true}
+]

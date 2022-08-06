@@ -1,0 +1,9 @@
+[
+    {"ID_Agen":1,"ID_Customer":4},
+    {"ID_Agen":1,"ID_Customer":3},
+    {"ID_Agen":1,"ID_Customer":2},
+    {"ID_Agen":1,"ID_Customer":1},
+    {"ID_Agen":2,"ID_Customer":4},
+    {"ID_Agen":3,"ID_Customer":3},
+    {"ID_Agen":4,"ID_Customer":2}
+]
