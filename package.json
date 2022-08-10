@@ -7,7 +7,6 @@
     "start": "node server.js",
     "dev": "nodemon server.js"
   },
-  "devDependencies": {},
   "dependencies": {
     "bcrypt": "^5.0.1",
     "body-parser": "^1.19.1",
@@ -20,5 +19,8 @@
   },
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "sequelize-cli": "^6.4.1"
+  }
 }
