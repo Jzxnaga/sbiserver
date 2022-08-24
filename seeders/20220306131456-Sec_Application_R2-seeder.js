@@ -7,6 +7,7 @@ module.exports = {
     let array = []
     for(let i = 0 ; i < data.length ; i ++){
       let object = { 
+        id : parseInt(i+1),
         totalPermohonan:0,
         totalPenawaran:0,
         totalPencairan:0,

@@ -7,7 +7,7 @@ module.exports = {
     let array = []
     for(let i = 0 ; i < data.length ; i ++){
       let object = { 
-        id : parseInt(data[i].C),
+        id : parseInt(i+1),
         merk : data[i].J.substring(0, data[i].J.indexOf(' ')),
         jenis : data[i].J.substring(data[i].J.indexOf(' ') + 1),
         model : data[i].E,

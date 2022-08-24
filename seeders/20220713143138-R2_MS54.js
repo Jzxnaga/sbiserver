@@ -7,6 +7,7 @@ module.exports = {
     let array = []
     for(let i = 0 ; i < data.length ; i ++){
       let object = { 
+        id : parseInt(i+1),
         ID_R2 : parseInt(i)+1,
         price : parseInt(data[i].MS54)*1000000,
         createdAt : new Date(),
