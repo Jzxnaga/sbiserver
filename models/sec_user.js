@@ -19,7 +19,7 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.BIGINT(20),
       primaryKey: true,
       autoIncrement: true,
-      initialAutoIncrement:1
+      initialAutoIncrement:3
     },
     firstName: {
       type: DataTypes.STRING,
