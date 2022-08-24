@@ -37,7 +37,7 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.STRING,
       allowNull: true
     },
-    ID_Agen: {
+    ID_Sec_Agen: {
       type: DataTypes.INTEGER,
       allowNull: true
     },
@@ -65,7 +65,7 @@ module.exports = (sequelize, DataTypes) => {
   });
 
   Sec_Application_R2.associate = function(models){
-    Sec_Application_R2.belongsTo(models.Sec_User,{foreignKey: 'ID_Agen'})
+    Sec_Application_R2.belongsTo(models.Sec_User,{foreignKey: 'ID_Sec_Agen'})
     Sec_Application_R2.belongsTo(models.Sec_Customer,{foreignKey: 'ID_Sec_Customer'})
     Sec_Application_R2.hasMany(models.Sec_R2, {foreignKey : 'ID_Sec_Application_R2'});
   }

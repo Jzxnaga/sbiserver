@@ -43,6 +43,19 @@ class sec_application_R2_controller{
       })
   }
 
+  static async findAllFilterByAgenId(req,res,next){
+    Sec_Application_R2.findOne({include: [{ model: Sec_User , where: {id : req.query.id}  } , { model: Sec_Customer } 
+      , { model : Sec_R2 }
+    ]})
+    //Sec_Application_R2.findOne({ where:{ id:1 }})
+      .then(data=>{
+        res.status(200).json(data)
+      })
+      .catch(err=>{
+        next(err)
+      })
+  }
+
   static async create(req,res,next){
     let {
       totalPermohonan, 
@@ -51,7 +64,7 @@ class sec_application_R2_controller{
       jumlahItem,
       komisiAgen, 
       statusPengajuan,
-      ID_Agen,
+      ID_Sec_Agen,
       ID_Sec_Customer,
       ID_R2_Lessor
     } = req.body
