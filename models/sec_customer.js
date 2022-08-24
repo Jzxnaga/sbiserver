@@ -12,7 +12,13 @@ module.exports = (sequelize, DataTypes) => {
      */
   }
 
-  Sec_Customer.init({firstName: DataTypes.STRING,
+  Sec_Customer.init({
+    id: {
+      type: DataTypes.BIGINT(20),
+      primaryKey: true,
+      autoIncrement: true,
+    },
+    firstName: DataTypes.STRING,
     lastName: {
       type: DataTypes.STRING,
       allowNull: false

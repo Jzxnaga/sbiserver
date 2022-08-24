@@ -13,6 +13,11 @@ module.exports = (sequelize, DataTypes) => {
   }
 
   Sec_R2.init({
+    id: {
+      type: DataTypes.BIGINT(20),
+      primaryKey: true,
+      autoIncrement: true,
+    },
     ID_Sec_Application_R2: {
       type: DataTypes.INTEGER,
       allowNull: false

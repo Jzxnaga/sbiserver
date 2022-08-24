@@ -13,7 +13,11 @@ module.exports = (sequelize, DataTypes) => {
   }
 
   R2_Asset.init({
-    // id_R2:DataTypes.INTEGER,
+    id: {
+      type: DataTypes.BIGINT(20),
+      primaryKey: true,
+      autoIncrement: true,
+    },
     merk: DataTypes.STRING,
     tipe: DataTypes.STRING,
     model: DataTypes.STRING,

@@ -15,6 +15,11 @@ module.exports = (sequelize, DataTypes) => {
   }
 
   Sec_User.init({
+    id: {
+      type: DataTypes.BIGINT(20),
+      primaryKey: true,
+      autoIncrement: true,
+    },
     firstName: {
       type: DataTypes.STRING,
       allowNull: false
