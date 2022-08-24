@@ -66,7 +66,7 @@ class sec_user_controller{
               // console.log(verify_token)
           Sec_User.update(bodyUpdate,{where:{id:data.dataValues.id}})
           //update token in sec_user as id nanti bisa dihilangkan
-          res.status(200).json({access_token,username,id})
+          res.status(200).json({access_token,username,id:data.dataValues.id})
         }
         else{
           throw ({message: 'INVALID_PASSWORD'})
