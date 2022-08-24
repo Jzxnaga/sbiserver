@@ -8,5 +8,6 @@ router.post('/create',authentication,sec_application_R2_controller.create)
 // router.post('/login',sec_user_controller.login)
 router.get('/findOneAppByID',authentication,sec_application_R2_controller.findOneAppByID)
 router.get('/findOneAppByNopol',authentication,sec_application_R2_controller.findOneAppByNopol)
+router.get('/findAllFilterByAgenId',authentication,sec_application_R2_controller.findAllFilterByAgenId)
 
 module.exports = router;
